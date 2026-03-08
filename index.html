@@ -1,32 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portofolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Agus Prasetyo Profile Site</title>
 
-  <style>
-    html,
-    body {
-      height: 100%;
-      width: 100%;
-    }
-  </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container h-100">
-    <div class="h-100 row align-items-center justify-content-center">
-      <div class="col-md-6 text-center">
-        <h1>Under Development 😎</h1>
-        <h1>Coming Soon Guys :)</h1>
-        
+
+<body data-bs-theme="light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <!-- <a class="navbar-brand fw-bold" href="#home">My Portfolio</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="display-4 fw-bold mb-3">Hello, I'm <br><span class="text-info" id="typed-name"></span></h1>
+          <!-- <h3 class="fw-light mb-4 text-white-50">Web Developer & Designer</h3> -->
+          <p class="lead mb-4">I build beautiful, responsive, and dynamic applications with passion.</p>
+          <a href="#portfolio" class="btn btn-info btn-lg px-4 me-2 text-white">View My Work</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
+        </div>
+        <div class="col-lg-6 text-center mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1000">
+          <!-- Placeholder Profile Image -->
+          <img src="https://ui-avatars.com/api/?name=Agus+Prasetyo&size=300&background=0dcaf0&color=fff&rounded=true"
+            alt="Profile Picture" class="img-fluid shadow-lg mb-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container py-5">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-card p-4 rounded shadow-sm">
+            <p class="fs-5">I am a passionate Web Developer with experience in building stable and scalable web
+              applications. I love working with clean code, elegant designs, and modern web technologies.</p>
+            <p class="fs-5 mb-0">My skill set includes HTML & CSS, PHP, Laravel, JavaScript, Bootstrap, and more. I am
+              constantly
+              learning new tools to improve my craft and deliver the best products.</p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="row g-4">
+            <div class="col-sm-6">
+              <div class="skill-card p-4 text-center rounded shadow-sm">
+                <i class="fa-brands fa-html5 fa-3x text-primary mb-3"></i>
+                <h5>Frontend</h5>
+                <p class="text-muted mb-0">HTML, CSS, JS, Bootstrap, Tailwind CSS</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="skill-card p-4 text-center rounded shadow-sm">
+                <i class="fa-brands fa-php fa-3x text-primary mb-3"></i>
+                <h5>Backend</h5>
+                <p class="text-muted mb-0">PHP, Laravel, REST APIs</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="skill-card p-4 text-center rounded shadow-sm">
+                <i class="fa-solid fa-database fa-3x text-primary mb-3"></i>
+                <h5>Databases</h5>
+                <p class="text-muted mb-0">MySQL, PostgreSQL, SQL Server</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="skill-card p-4 text-center rounded shadow-sm">
+                <i class="fa-solid fa-code-branch fa-3x text-primary mb-3"></i>
+                <h5>Tools</h5>
+                <p class="text-muted mb-0">Docker, Gitlab, Github</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Experience Section -->
+  <section id="education" class="py-5 bg-light-blue">
+    <div class="container py-5">
+      <h2 class="section-title" data-aos="fade-up">Education & Experience</h2>
+      <div class="row mt-5">
+
+        <!-- Education Column -->
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="fw-bold mb-4 text-dark-blue"><i class="fa-solid fa-graduation-cap me-2 text-info"></i> Education
+          </h3>
+
+          <div class="timeline-item">
+            <h4 class="fw-bold text-dark-blue">Teknik Informatika</h4>
+            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2021 - 2023</span>
+            <p>Politeknik Elektronika Negeri Surabaya</p>
+            <p class="text-muted">Currently pursuing a Bachelor's degree (D4/S1) while simultaneously gaining hands-on
+              professional experience as an IT Staff at a reputable company, demonstrating a strong commitment to both
+              academic excellence and career development.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4 class="fw-bold text-dark-blue">Manajemen Informatika</h4>
+            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2017 - 2020</span>
+            <p>Politeknik Negeri Malang</p>
+            <p class="text-muted">Focused on software engineering, web development, and database management. Graduated
+              with honors.</p>
+          </div>
+
+          <!-- Uncomment or copy this block for another Education data -->
+
+          <div class="timeline-item mt-4">
+            <h4 class="fw-bold text-dark-blue">Rekayasa Perangkat Lunak</h4>
+            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2014 - 2017</span>
+            <p>SMK Taruna Jaya Prawira Tuban</p>
+            <p class="text-muted">I took part in LKS competitions at district and provincial levels, and i was named the
+              best graduate and got the highest national exam score at Taruna Jaya Prawira Vocational School Tuban in
+              2017</p>
+          </div>
+
+
+        </div>
+
+        <!-- Experience Column -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="fw-bold mb-4 text-dark-blue"><i class="fa-solid fa-briefcase me-2 text-info"></i> Experience</h3>
+
+          UNDER DEVELOPMENT
+          <!-- <div class="timeline-item">
+            <h4 class="fw-bold text-dark-blue">Full-Stack Web Developer</h4>
+            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2022 - Present</span>
+            <p>Tech Company Inc.</p>
+            <p class="text-muted">Developing scalable web applications using Laravel, Bootstrap, and modern web
+              standards. Building REST APIs and creating beautiful UI/UX.</p>
+          </div> -->
+
+          <!-- Uncomment or copy this block for another Experience data -->
+
+          <!-- <div class="timeline-item mt-4">
+            <h4 class="fw-bold text-dark-blue">Junior Web Developer</h4>
+            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2021 - 2022</span>
+            <p>Another Tech Company</p>
+            <p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
+          </div> -->
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5">
+    <div class="container py-5">
+      <h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
+      <div class="row g-4 mt-4">
+
+        UNDER DEVELOPMENT
+        <!-- <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card portfolio-card h-100">
+            <div class="card-img-top portfolio-img bg-dark text-white d-flex align-items-center justify-content-center"
+              style="height: 200px;">
+              <i class="fa-solid fa-laptop-code fa-4x opacity-50"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">E-Commerce System</h5>
+              <p class="card-text text-muted">A fully functional e-commerce platform built with Laravel and Bootstrap.
+                Includes shopping cart and checkout.</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 pb-4">
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-brands fa-github me-1"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card portfolio-card h-100">
+            <div class="card-img-top portfolio-img bg-dark text-white d-flex align-items-center justify-content-center"
+              style="height: 200px;">
+              <i class="fa-solid fa-address-card fa-4x opacity-50"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Company Profile Website</h5>
+              <p class="card-text text-muted">A sleek and modern business profile website with dynamic content
+                management and animations.</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 pb-4">
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card portfolio-card h-100">
+            <div class="card-img-top portfolio-img bg-dark text-white d-flex align-items-center justify-content-center"
+              style="height: 200px;">
+              <i class="fa-solid fa-mobile-screen fa-4x opacity-50"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Inventory Dashboard</h5>
+              <p class="card-text text-muted">A backend dashboard system for tracking inventory, built with highly
+                responsive Bootstrap components.</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 pb-4">
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-brands fa-github me-1"></i> View Code</a>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" style="background-color: var(--dark-blue); color: #fff;">
+    <div class="container py-5">
+      <h2 class="section-title text-white" data-aos="fade-up">Let's Connect</h2>
+      <p class="text-center mb-5 text-white-50" data-aos="fade-up" data-aos-delay="100">I'm always open to discussing
+        web development work or partnership opportunities.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="d-flex align-items-center mb-4">
+                <i class="fa-solid fa-envelope fa-2x text-info me-3" style="width: 40px; text-align: center;"></i>
+                <div>
+                  <h5 class="mb-0 text-white">Email</h5>
+                  <p class="mb-0 text-white-50">agusprasetyo1889@gmail.com</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <i class="fa-solid fa-location-dot fa-2x text-info me-3" style="width: 40px; text-align: center;"></i>
+                <div>
+                  <h5 class="mb-0 text-white">Location</h5>
+                  <p class="mb-0 text-white-50">Tuban & Surabaya, <br>Jawa Timur Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <h5 class="mb-4 text-white">Social Profiles</h5>
+              <div class="social-links-left">
+                <a href="https://github.com/agusprasetyo30" target="_blank" title="GitHub"
+                  class="text-white text-decoration-none mb-3 d-flex align-items-center hover-info"><i
+                    class="fa-brands fa-github fa-2x me-3" style="width: 40px; text-align: center;"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/agusprasetyo30/" target="_blank" title="LinkedIn"
+                  class="text-white text-decoration-none mb-3 d-flex align-items-center hover-info"><i
+                    class="fa-brands fa-linkedin fa-2x me-3" style="width: 40px; text-align: center;"></i> LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4" style="background-color: #083359;">
+    <div class="container">
+      <div class="text-white-50">
+        <p class="mb-0">&copy; 2026 Agus Prasetyo. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Typed.js for typing animation -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    // Initialize AOS Animation
+    AOS.init({
+      once: true, // whether animation should happen only once - while scrolling down
+      offset: 100, // offset (in px) from the original trigger point
+    });
+
+    // Initialize Typed.js for typing animation
+    var typed = new Typed('#typed-name', {
+      strings: ['Agus Prasetyo', 'a Web Developer', 'a Backend Developer', 'a Laravel Developer'],
+      typeSpeed: 70,
+      backSpeed: 40,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|'
+    });
+
+    // Navbar Scroll Effect and Active State
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+
+      // Navbar background
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled', 'shadow');
+      } else {
+        navbar.classList.remove('scrolled', 'shadow');
+      }
+
+      // Dynamic Active Links
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>

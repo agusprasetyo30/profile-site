@@ -1,0 +1,216 @@
+:root {
+  --primary-blue: #0d6efd;
+  --dark-blue: #0a4275;
+  --light-blue: #f0f8ff;
+  --bg-color: #ffffff;
+  --text-dark: #333333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent !important;
+  transition: all 0.3s ease-in-out;
+  padding: 15px 0;
+}
+
+.navbar.scrolled {
+  background-color: var(--dark-blue) !important;
+  padding: 10px 0;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link {
+  position: relative;
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #0dcaf0;
+  /* info color */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.text-info {
+  color: #0dcaf0 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--dark-blue) 80%, rgba(13, 110, 253, 0.9) 100%), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  background-blend-mode: darken;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.hero-section img {
+  border: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-section img:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Basics */
+.section-title {
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-blue);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+
+/* About Section */
+.about-card,
+.skill-card {
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.1) !important;
+}
+
+.skill-card i {
+  color: var(--primary-blue) !important;
+}
+
+/* Education Timeline */
+.timeline-item {
+  border-left: 3px solid var(--primary-blue);
+  padding-left: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  border: 4px solid var(--light-blue);
+  transition: background-color 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  background-color: #0dcaf0;
+  /* change bullet point color on hover */
+}
+
+/* Hover Utils */
+.hover-info {
+  transition: color 0.3s ease;
+}
+
+.hover-info:hover {
+  color: #0dcaf0 !important;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15);
+}
+
+.portfolio-img {
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.05);
+}
+
+.portfolio-img i {
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-img i {
+  opacity: 1 !important;
+  color: #0dcaf0;
+}
+
+/* Footer / Contact */
+.footer {
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 60px 0 30px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background-color: #0dcaf0;
+  color: var(--dark-blue);
+  transform: translateY(-5px);
+}
