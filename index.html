@@ -2,370 +2,674 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agus Prasetyo Profile Site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agus Prasetyo Profile Site</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- Google Fonts: Outfit + Inter -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-  <!-- AOS Animation CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- AOS Animation CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Custom Style -->
-  <link rel="stylesheet" href="style.css">
+	<!-- Custom Style -->
+	<link rel="stylesheet" href="style.css">
 </head>
 
-<body data-bs-theme="light">
+<body data-bs-theme="light" id="html-body">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-    <div class="container">
-      <!-- <a class="navbar-brand fw-bold" href="#home">My Portfolio</a> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+		<div class="container">
+			<!-- <a class="navbar-brand fw-bold" href="#home">My Portfolio</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav me-auto ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#education">Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+				<!-- Theme Toggle -->
+				<button id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+					<i class="fa-solid fa-moon" id="themeIcon"></i>
+				</button>
+			</div>
+		</div>
+	</nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero-section d-flex align-items-center">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
-          <h1 class="display-4 fw-bold mb-3">Hello, I'm <br><span class="text-info" id="typed-name"></span></h1>
-          <!-- <h3 class="fw-light mb-4 text-white-50">Web Developer & Designer</h3> -->
-          <p class="lead mb-4">I build beautiful, responsive, and dynamic applications with passion.</p>
-          <a href="#portfolio" class="btn btn-info btn-lg px-4 me-2 text-white">View My Work</a>
-          <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
-        </div>
-        <div class="col-lg-6 text-center mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1000">
-          <!-- Placeholder Profile Image -->
-          <img src="https://ui-avatars.com/api/?name=Agus+Prasetyo&size=300&background=0dcaf0&color=fff&rounded=true"
-            alt="Profile Picture" class="img-fluid shadow-lg mb-4">
-        </div>
-      </div>
-    </div>
-  </section>
+	<!-- Hero Section -->
+	<section id="home" class="hero-section d-flex align-items-center">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
+					<h1 class="display-4 fw-bold mb-3">Hello, I'm <br><span class="text-info" id="typed-name"></span>
+					</h1>
+					<!-- <h3 class="fw-light mb-4 text-white-50">Web Developer & Designer</h3> -->
+					<p class="lead mb-4">I build beautiful, responsive, and dynamic applications with passion.</p>
+					<a href="#portfolio" class="btn btn-info btn-lg px-4 me-2 text-white">View My Work</a>
+					<a href="#contact" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
+				</div>
+				<div class="col-lg-6 text-center mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1000">
+					<!-- Placeholder Profile Image -->
+					<img src="https://avatars.githubusercontent.com/u/35440229" alt="Profile Picture"
+						class="img-fluid  mb-4 rounded-circle">
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container py-5">
-      <h2 class="section-title" data-aos="fade-up">About Me</h2>
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-          <div class="about-card p-4 rounded shadow-sm">
-            <p class="fs-5">I am a passionate Web Developer with experience in building stable and scalable web
-              applications. I love working with clean code, elegant designs, and modern web technologies.</p>
-            <p class="fs-5 mb-0">My skill set includes HTML & CSS, PHP, Laravel, JavaScript, Bootstrap, and more. I am
-              constantly
-              learning new tools to improve my craft and deliver the best products.</p>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="row g-4">
-            <div class="col-sm-6">
-              <div class="skill-card p-4 text-center rounded shadow-sm">
-                <i class="fa-brands fa-html5 fa-3x text-primary mb-3"></i>
-                <h5>Frontend</h5>
-                <p class="text-muted mb-0">HTML, CSS, JS, Bootstrap, Tailwind CSS</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="skill-card p-4 text-center rounded shadow-sm">
-                <i class="fa-brands fa-php fa-3x text-primary mb-3"></i>
-                <h5>Backend</h5>
-                <p class="text-muted mb-0">PHP, Laravel, REST APIs</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="skill-card p-4 text-center rounded shadow-sm">
-                <i class="fa-solid fa-database fa-3x text-primary mb-3"></i>
-                <h5>Databases</h5>
-                <p class="text-muted mb-0">MySQL, PostgreSQL, SQL Server</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="skill-card p-4 text-center rounded shadow-sm">
-                <i class="fa-solid fa-code-branch fa-3x text-primary mb-3"></i>
-                <h5>Tools</h5>
-                <p class="text-muted mb-0">Docker, Gitlab, Github</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+	<!-- About Section -->
+	<section id="about" class="py-5">
+		<div class="container py-5">
+			<h2 class="section-title" data-aos="fade-up">About Me</h2>
+			<div class="row align-items-center">
+				<div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+					<div class="about-card p-4 rounded ">
+						<p class="fs-5">I am a passionate Web Developer with experience in building stable and scalable
+							web
+							applications. I love working with clean code, elegant designs, and modern web technologies.
+						</p>
+						<p class="fs-5 mb-0">My skill set includes HTML & CSS, PHP, Laravel, JavaScript, Bootstrap, and
+							more. I am
+							constantly
+							learning new tools to improve my craft and deliver the best products.</p>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+					<div class="row g-4">
+						<div class="col-sm-6">
+							<div class="skill-card p-4 text-center rounded ">
+								<i class="fa-brands fa-html5 fa-3x text-primary mb-3"></i>
+								<h5>Frontend</h5>
+								<p class="text-muted mb-0">HTML, CSS, JS, Bootstrap, Tailwind CSS</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="skill-card p-4 text-center rounded ">
+								<i class="fa-brands fa-php fa-3x text-primary mb-3"></i>
+								<h5>Backend</h5>
+								<p class="text-muted mb-0">PHP, Laravel, REST APIs</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="skill-card p-4 text-center rounded ">
+								<i class="fa-solid fa-database fa-3x text-primary mb-3"></i>
+								<h5>Databases</h5>
+								<p class="text-muted mb-0">MySQL, PostgreSQL, SQL Server</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="skill-card p-4 text-center rounded ">
+								<i class="fa-solid fa-code-branch fa-3x text-primary mb-3"></i>
+								<h5>Tools</h5>
+								<p class="text-muted mb-0">Docker, Gitlab, Github</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- Education & Experience Section -->
-  <section id="education" class="py-5 bg-light-blue">
-    <div class="container py-5">
-      <h2 class="section-title" data-aos="fade-up">Education & Experience</h2>
-      <div class="row mt-5">
+	<!-- Education & Experience Section -->
+	<section id="education" class="py-5 bg-alt">
+		<div class="container py-5">
+			<h2 class="section-title" data-aos="fade-up">Education & Experience</h2>
+			<div class="row mt-5">
 
-        <!-- Education Column -->
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
-          <h3 class="fw-bold mb-4 text-dark-blue"><i class="fa-solid fa-graduation-cap me-2 text-info"></i> Education
-          </h3>
+				<!-- Education Column -->
+				<div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+					<h3 class="fw-bold mb-4"><i class="fa-solid fa-graduation-cap me-2 text-info"></i>
+						Education
+					</h3>
 
-          <div class="timeline-item">
-            <h4 class="fw-bold text-dark-blue">Teknik Informatika</h4>
-            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2021 - 2023</span>
-            <p>Politeknik Elektronika Negeri Surabaya</p>
-            <p class="text-muted">Currently pursuing a Bachelor's degree (D4/S1) while simultaneously gaining hands-on
-              professional experience as an IT Staff at a reputable company, demonstrating a strong commitment to both
-              academic excellence and career development.</p>
-          </div>
+					<div class="timeline-item">
+						<h4 class="fw-bold">Teknik Informatika</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2021 -
+							2023</span>
+						<p class="company-name">Politeknik Elektronika Negeri Surabaya</p>
+						<p class="text-muted">Currently pursuing a Bachelor's degree (D4/S1) while simultaneously
+							gaining hands-on
+							professional experience as an IT Staff at a reputable company, demonstrating a strong
+							commitment to both
+							academic excellence and career development.</p>
+					</div>
 
-          <div class="timeline-item">
-            <h4 class="fw-bold text-dark-blue">Manajemen Informatika</h4>
-            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2017 - 2020</span>
-            <p>Politeknik Negeri Malang</p>
-            <p class="text-muted">Focused on software engineering, web development, and database management. Graduated
-              with honors.</p>
-          </div>
+					<div class="timeline-item">
+						<h4 class="fw-bold">Manajemen Informatika</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2017 -
+							2020</span>
+						<p class="company-name">Politeknik Negeri Malang</p>
+						<p class="text-muted">Focused on software engineering, web development, and database management.
+							Graduated
+							with honors.</p>
+					</div>
 
-          <!-- Uncomment or copy this block for another Education data -->
+					<!-- Uncomment or copy this block for another Education data -->
 
-          <div class="timeline-item mt-4">
-            <h4 class="fw-bold text-dark-blue">Rekayasa Perangkat Lunak</h4>
-            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2014 - 2017</span>
-            <p>SMK Taruna Jaya Prawira Tuban</p>
-            <p class="text-muted">I took part in LKS competitions at district and provincial levels, and i was named the
-              best graduate and got the highest national exam score at Taruna Jaya Prawira Vocational School Tuban in
-              2017</p>
-          </div>
+					<div class="timeline-item mt-4">
+						<h4 class="fw-bold">Rekayasa Perangkat Lunak</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2014 -
+							2017</span>
+						<p class="company-name">SMK Taruna Jaya Prawira Tuban</p>
+						<p class="text-muted">I took part in LKS competitions at district and provincial levels, and i
+							was named the
+							best graduate and got the highest national exam score at Taruna Jaya Prawira Vocational
+							School Tuban in
+							2017</p>
+					</div>
+				</div>
+
+				<!-- Experience Column -->
+				<div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+					<h3 class="fw-bold mb-4"><i class="fa-solid fa-briefcase me-2 text-info"></i>
+						Experience</h3>
+					<div class="timeline-item">
+						<h4 class="fw-bold">IT Web Developer</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>Apr 2025 -
+							Present</span>
+						<p class="company-name">PT. Borwita Citra Prima</p>
+						<p class="text-muted">Developing scalable web applications using Laravel, Bootstrap, and modern
+							web
+							standards. Building REST APIs and creating beautiful UI/UX.</p>
+					</div>
+
+					<!-- Uncomment or copy this block for another Experience data -->
+
+					<div class="timeline-item mt-4">
+						<h4 class="fw-bold">Fullstack Web Developer</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>Sep 2024 -
+							Mar 2025</span>
+						<p class="company-name">Propnex Indonesia</p>
+						<p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
+					</div>
+
+					<div class="timeline-item mt-4">
+						<h4 class="fw-bold">Fullstack Web Developer</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>Feb 2023 -
+							Jul 2024</span>
+						<p class="company-name">PT. Pelayaran Nasional Ekalya Purnamasari</p>
+						<p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
+					</div>
+
+					<div class="timeline-item mt-4">
+						<h4 class="fw-bold">Chief MeMFIS</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>Mar 2022 -
+							Jan 2023</span>
+						<p class="company-name">PT. Merpati Maintenance Facility</p>
+						<p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
+
+						<h4 class="fw-bold">IT Staff</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>Nov 2020 -
+							Mar 2022</span>
+						<p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
+					</div>
+
+					<div class="timeline-item mt-4">
+						<h4 class="fw-bold">Ketua Divisi Pemrograman</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>Jun 2018 -
+							Jul 2020</span>
+						<p class="company-name">Workshop Riset Informatika (Politeknik Negeri Malang)</p>
+						<p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
+					</div>
+
+					<div class="timeline-item mt-4">
+						<h4 class="fw-bold">Web Development Intern</h4>
+						<span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>Jan 2020 -
+							Feb 2020</span>
+						<p class="company-name">PT. Surabaya Autocomp Indonesia</p>
+						<p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="py-5">
+		<div class="container py-5">
+			<h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
+			<div class="row g-4 mt-4">
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/onegrosir.png" data-title="Landing Page ONE Grosir Laundry"
+							data-link="https://onegrosirlaundry.com/"
+							data-description="The ONE GROSIR LAUNDRY project is a conversion-optimized landing page and custom Laravel-based CMS engineered to serve as a high-performing lead generation engine. I developed a robust backend architecture featuring layered request validations and a custom asynchronous (AJAX) image interception system, complete with an auto-deletion mechanism for orphan files. The platform delivers exceptional frontend performance and SEO-ready infrastructure while drastically reducing future maintenance overhead.">
+							<img src="/img/onegrosir.png" class="card-img-top portfolio-img"
+								alt="Landing Page ONE Grosir Laundry">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Landing Page ONE Grosir Laundry</h5>
+							<p class="card-text text-muted">The ONE GROSIR LAUNDRY project is a conversion-optimized
+								landing page and
+								custom Laravel-based CMS engineered to serve as a high-performing lead generation engine
+								while providing
+								a foolproof operational experience for non-technical users. To ensure long-term server
+								scalability and
+								prevent database bloat, I developed a robust backend architecture featuring layered
+								request validations
+								and a custom asynchronous (AJAX) image interception system within the rich text editor,
+								complete with an
+								auto-deletion mechanism for orphan files. By seamlessly integrating dynamic marketing
+								modules—such as
+								time-sensitive promos and downloadable lead magnets—with this highly optimized,
+								SEO-ready
+								infrastructure, the platform delivers exceptional frontend performance and security
+								while drastically
+								reducing future maintenance overhead and technical support needs.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://onegrosirlaundry.com/" class="btn btn-outline-primary btn-sm"><i
+									class="fa-brands fa-github me-1"></i>
+								View Website</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/propnex.png" data-title="Propnex Plus"
+							data-link="https://propnexplus.com/"
+							data-description="A web application designed to streamline the process of buying, selling, and renting properties. This application provides an intuitive platform for property owners, agents, and buyers to interact within a single integrated system, enabling seamless property discovery and transaction management.">
+							<img src="/img/propnex.png" class="card-img-top portfolio-img" alt="Propnex Plus">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Propnex Plus</h5>
+							<p class="card-text text-muted">A web application designed to streamline the process of
+								buying, selling,
+								and renting properties. This application provides an intuitive platform for property
+								owners, agents, and
+								buyers to interact within a single integrated system.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://propnexplus.com/" class="btn btn-outline-primary btn-sm"><i
+									class="fa-brands fa-link me-1"></i>
+								View Website</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/elpi.png" data-title="Inpromise (Program Internal PT. ELPI)"
+							data-link="#"
+							data-description="This system is designed to support company operations, including vessel maintenance management, vessel certification schedules, HRIS management, and departmental management. The primary objectives are to improve operational efficiency, provide transparency of information to employees, and streamline the company's administrative processes.">
+							<img src="/img/elpi.png" class="card-img-top portfolio-img" alt="Inpromise">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Inpromise (Program Internal PT. ELPI)</h5>
+							<p class="card-text text-muted">This system is designed to support company operations,
+								including
+								vessel maintenance management, vessel certification schedules, HRIS management, and
+								departmental
+								management, among others. The primary objectives of this system are to improve
+								operational efficiency,
+								provide transparency of information to employees, and streamline the company’s
+								administrative processes.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i>
+								Internal Used</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/memfis.png"
+							data-title="MeMFIS (Merpati Maintenance Facility Information System)" data-link="#"
+							data-description="This system supports company operations including vessel maintenance management, vessel certification schedules, HRIS management, and departmental management. The objectives are to improve operational efficiency, provide transparency to employees, and streamline the company's administrative processes.">
+							<img src="/img/memfis.png" class="card-img-top portfolio-img" alt="MeMFIS">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">MeMFIS (Merpati Maintenance Facility Information System)</h5>
+							<p class="card-text text-muted">This system is designed to support company operations,
+								including
+								vessel maintenance management, vessel certification schedules, HRIS management, and
+								departmental
+								management, among others. The primary objectives of this system are to improve
+								operational efficiency,
+								provide transparency of information to employees, and streamline the company’s
+								administrative processes.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i>
+								Internal Used</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/workshopv2.png" data-title="Sistem Workshop PT. MMF v.2" data-link="#"
+							data-description="This Aircraft Component Maintenance Management Information System is designed for the administrative management of aircraft component maintenance in the workshop department at PT. Merpati Maintenance Facility. The system enables monitoring of maintenance history, tool usage, and the status of each division within the workshop, replacing outdated manual methods.">
+							<img src="/img/workshopv2.png" class="card-img-top portfolio-img"
+								alt="Sistem Workshop PT. MMF v.2">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Sistem Workshop PT. MMF v.2</h5>
+							<p class="card-text text-muted">This Aircraft Component Maintenance Management Information
+								System is a
+								computer application or software designed for the administrative management
+								of aircraft component maintenance in the workshop department at PT. Merpati Maintenance
+								Facility.
+								The problem faced by the workshop department is that administrative management still
+								relies on outdated/manual methods, making it impossible to monitor the maintenance
+								history of
+								components,
+								the use of items and tools during maintenance, and the status of each division within
+								the workshop.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i>
+								Internal Used</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/sigmagang.png"
+							data-title="Sistem Informasi Pendaftaran PKL — PT. Semen Indonesia" data-link="#"
+							data-description="This Field Work Registration Information System (PKL) streamlines the registration process for students wishing to undertake field work at PT. Semen Indonesia. The system replaces manual processes with an integrated digital solution, enhancing efficiency and transparency in the management of registrant data and registration status.">
+							<img src="/img/sigmagang.png" class="card-img-top portfolio-img"
+								alt="Sistem Informasi PKL PT. Semen Indonesia">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Sistem Informasi Pendaftaran Praktek Kerja Lapangan (PKL) PT.
+								Semen
+								Indonesia</h5>
+							<p class="card-text text-muted">This Field Work Registration Information System (PKL) is
+								designed to
+								streamline the registration process for students wishing to undertake field work at PT.
+								Semen Indonesia. The system replaces manual processes with an integrated digital
+								solution,
+								enhancing efficiency and transparency in the management of registrant data and
+								registration
+								status.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i>
+								Internal Used</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/spbu.png"
+							data-title="Sistem Penerimaan Karyawan SPBU — PT. Sumber Rejeki Gas" data-link="#"
+							data-description="This web application streamlines and digitalizes the entire employee onboarding process at PT. Sumber Rejeki Gas, a company operating a network of gas stations. The system supports the full recruitment lifecycle from online registration and administrative screening — including document verification — through to the structured interview process.">
+							<img src="/img/spbu.png" class="card-img-top portfolio-img"
+								alt="Sistem Penerimaan Karyawan SPBU PT. Sumber Rejeki Gas">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Sistem Penerimaan Karyawan SPBU PT. Sumber Rejeki Gas</h5>
+							<p class="card-text text-muted">This project involves the development of a web application
+								designed to
+								streamline and simplify the entire employee onboarding process at PT. Sumber Rejeki Gas,
+								a company that
+								operates a network of gas stations across various locations. The system is designed to
+								support the
+								comprehensive digitization of the recruitment process, from the online registration
+								stage and
+								administrative screening—which involves verifying applicants’ documents—through to the
+								structured
+								interview process.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i>
+								Internal Used</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+					<div class="card portfolio-card h-100">
+						<div class="portfolio-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal"
+							data-img-src="/img/sai.png"
+							data-title="Visualisasi Data Losstime — Departemen Warehouse PT. Surabaya Autocomp"
+							data-link="#"
+							data-description="This system is designed to visualize supply downtime data from the warehouse department. Data previously presented as weekly, monthly, and annual tables is converted into interactive bar charts showing daily, monthly, and annual trends — making it far easier for warehouse employees to analyze and understand operational patterns on a single screen.">
+							<img src="/img/sai.png" class="card-img-top portfolio-img"
+								alt="Visualisasi data Losstime di PT. Surabaya Autocomp Indonesia">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Visualisasi data Losstime pada departemen Warehouse di PT.
+								Surabaya
+								Autocomp Indonesia</h5>
+							<p class="card-text text-muted">This system is designed to display downtime data when supply
+								errors occur,
+								so that data previously presented in weekly, monthly, and annual tables is visualized as
+								bar charts to
+								show daily, monthly, and annual data, making it easier to understand. This allows
+								employees in the
+								storage department to view the charts easily without having to look at multiple
+								different tables on a
+								single desktop screen.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i>
+								Internal Used</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="py-5 bg-alt">
+		<div class="container py-5">
+			<h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+			<p class="text-center mb-5 text-muted" data-aos="fade-up" data-aos-delay="100">I'm always open to discussing
+				web development work or partnership opportunities.</p>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+					<div class="row g-4">
+						<div class="col-md-6">
+							<div class="contact-info-item">
+								<i class="fa-solid fa-envelope"></i>
+								<div>
+									<h5>Email</h5>
+									<p>agusprasetyo1889@gmail.com</p>
+								</div>
+							</div>
+							<div class="contact-info-item">
+								<i class="fa-solid fa-location-dot"></i>
+								<div>
+									<h5>Location</h5>
+									<p>Tuban &amp; Surabaya, Jawa Timur Indonesia</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h5 class="mb-3 fw-bold">Social Profiles</h5>
+							<div class="social-links-left">
+								<a href="https://github.com/agusprasetyo30" target="_blank" title="GitHub">
+									<i class="fa-brands fa-github"></i>
+									GitHub
+								</a>
+								<a href="https://www.linkedin.com/in/agusprasetyo30/" target="_blank" title="LinkedIn">
+									<i class="fa-brands fa-linkedin"></i>
+									LinkedIn
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer text-center py-4">
+		<div class="container">
+			<p class="mb-0 text-muted" style="font-size: 0.875rem;">&copy; 2026 Agus Prasetyo. All Rights Reserved.</p>
+		</div>
+	</footer>
 
 
-        </div>
+	<!-- Portfolio Detail Modal -->
+	<div class="modal fade" id="imageModal" tabindex="-1" aria-label="Portfolio Detail" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content portfolio-modal-content">
+				<!-- Close Button -->
+				<button type="button" class="portfolio-modal-close" data-bs-dismiss="modal" aria-label="Close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
 
-        <!-- Experience Column -->
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-          <h3 class="fw-bold mb-4 text-dark-blue"><i class="fa-solid fa-briefcase me-2 text-info"></i> Experience</h3>
+				<div class="row g-0">
+					<!-- Left: Image -->
+					<div class="col-lg-6 portfolio-modal-img-col">
+						<img src="" id="modalImage" class="portfolio-modal-img" alt="Portfolio Preview">
+					</div>
 
-          UNDER DEVELOPMENT
-          <!-- <div class="timeline-item">
-            <h4 class="fw-bold text-dark-blue">Full-Stack Web Developer</h4>
-            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2022 - Present</span>
-            <p>Tech Company Inc.</p>
-            <p class="text-muted">Developing scalable web applications using Laravel, Bootstrap, and modern web
-              standards. Building REST APIs and creating beautiful UI/UX.</p>
-          </div> -->
+					<!-- Right: Content -->
+					<div class="col-lg-6 d-flex align-items-start flex-column portfolio-modal-body">
+						<span class="portfolio-modal-tag">Portfolio</span>
+						<h4 id="modalTitle" class="portfolio-modal-title"></h4>
+						<p id="modalDescription" class="portfolio-modal-desc"></p>
+						<a id="modalLink" href="#" target="_blank" class="btn btn-info mt-auto portfolio-modal-btn">
+							<i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Visit Project
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-          <!-- Uncomment or copy this block for another Experience data -->
+	<!-- Bootstrap 5 JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-          <!-- <div class="timeline-item mt-4">
-            <h4 class="fw-bold text-dark-blue">Junior Web Developer</h4>
-            <span class="text-muted d-block mb-2"><i class="fa-solid fa-calendar-alt me-2"></i>2021 - 2022</span>
-            <p>Another Tech Company</p>
-            <p class="text-muted">Assisted in developing company websites and maintaining databases.</p>
-          </div> -->
+	<!-- AOS Animation JS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+	<!-- Typed.js for typing animation -->
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-        </div>
+	<script>
+		// ---- Theme Toggle ----
+		(function () {
+			const body = document.getElementById('html-body');
+			const icon = document.getElementById('themeIcon');
+			const saved = localStorage.getItem('theme') || 'light';
+			body.setAttribute('data-bs-theme', saved);
+			if (saved === 'dark') {
+				icon.classList.replace('fa-moon', 'fa-sun');
+			}
+			document.getElementById('themeToggle').addEventListener('click', function () {
+				const current = body.getAttribute('data-bs-theme');
+				const next = current === 'dark' ? 'light' : 'dark';
+				body.setAttribute('data-bs-theme', next);
+				localStorage.setItem('theme', next);
+				if (next === 'dark') {
+					icon.classList.replace('fa-moon', 'fa-sun');
+				} else {
+					icon.classList.replace('fa-sun', 'fa-moon');
+				}
+			});
+		})();
+		// Initialize AOS Animation
+		AOS.init({
+			once: true, // whether animation should happen only once - while scrolling down
+			offset: 100, // offset (in px) from the original trigger point
+		});
 
-      </div>
-    </div>
-  </section>
+		// Initialize Typed.js for typing animation
+		var typed = new Typed('#typed-name', {
+			strings: ['Agus Prasetyo', 'a Web Developer', 'a Backend Developer', 'a Laravel Developer'],
+			typeSpeed: 70,
+			backSpeed: 40,
+			loop: true,
+			showCursor: true,
+			cursorChar: '|'
+		});
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-5">
-    <div class="container py-5">
-      <h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
-      <div class="row g-4 mt-4">
+		// ---- Portfolio Detail Modal ----
+		const imageModal = document.getElementById('imageModal');
+		if (imageModal) {
+			imageModal.addEventListener('show.bs.modal', event => {
+				const trigger = event.relatedTarget;
+				const imgSrc = trigger.getAttribute('data-img-src') || '';
+				const title = trigger.getAttribute('data-title') || '';
+				const desc = trigger.getAttribute('data-description') || '';
+				const link = trigger.getAttribute('data-link') || '#';
 
-        UNDER DEVELOPMENT
-        <!-- <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card portfolio-card h-100">
-            <div class="card-img-top portfolio-img bg-dark text-white d-flex align-items-center justify-content-center"
-              style="height: 200px;">
-              <i class="fa-solid fa-laptop-code fa-4x opacity-50"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold">E-Commerce System</h5>
-              <p class="card-text text-muted">A fully functional e-commerce platform built with Laravel and Bootstrap.
-                Includes shopping cart and checkout.</p>
-            </div>
-            <div class="card-footer bg-white border-top-0 pb-4">
-              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-brands fa-github me-1"></i> View Code</a>
-            </div>
-          </div>
-        </div>
+				document.getElementById('modalImage').src = imgSrc;
+				document.getElementById('modalTitle').textContent = title;
+				document.getElementById('modalDescription').textContent = desc;
 
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card portfolio-card h-100">
-            <div class="card-img-top portfolio-img bg-dark text-white d-flex align-items-center justify-content-center"
-              style="height: 200px;">
-              <i class="fa-solid fa-address-card fa-4x opacity-50"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Company Profile Website</h5>
-              <p class="card-text text-muted">A sleek and modern business profile website with dynamic content
-                management and animations.</p>
-            </div>
-            <div class="card-footer bg-white border-top-0 pb-4">
-              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-link me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
+				const linkEl = document.getElementById('modalLink');
+				linkEl.href = link;
+				// Hide button jika link tidak tersedia (internal project)
+				linkEl.style.display = (link && link !== '#') ? 'inline-flex' : 'none';
+			});
+		}
 
-        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-          <div class="card portfolio-card h-100">
-            <div class="card-img-top portfolio-img bg-dark text-white d-flex align-items-center justify-content-center"
-              style="height: 200px;">
-              <i class="fa-solid fa-mobile-screen fa-4x opacity-50"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Inventory Dashboard</h5>
-              <p class="card-text text-muted">A backend dashboard system for tracking inventory, built with highly
-                responsive Bootstrap components.</p>
-            </div>
-            <div class="card-footer bg-white border-top-0 pb-4">
-              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-brands fa-github me-1"></i> View Code</a>
-            </div>
-          </div>
-        </div> -->
+		// Navbar Scroll Effect and Active State
+		const navLinks = document.querySelectorAll('.nav-link');
+		const sections = document.querySelectorAll('section');
 
-      </div>
-    </div>
-  </section>
+		window.addEventListener('scroll', function () {
+			const navbar = document.querySelector('.navbar');
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5" style="background-color: var(--dark-blue); color: #fff;">
-    <div class="container py-5">
-      <h2 class="section-title text-white" data-aos="fade-up">Let's Connect</h2>
-      <p class="text-center mb-5 text-white-50" data-aos="fade-up" data-aos-delay="100">I'm always open to discussing
-        web development work or partnership opportunities.</p>
+			// Navbar background
+			if (window.scrollY > 50) {
+				navbar.classList.add('scrolled');
+			} else {
+				navbar.classList.remove('scrolled');
+			}
 
-      <div class="row justify-content-center">
-        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="d-flex align-items-center mb-4">
-                <i class="fa-solid fa-envelope fa-2x text-info me-3" style="width: 40px; text-align: center;"></i>
-                <div>
-                  <h5 class="mb-0 text-white">Email</h5>
-                  <p class="mb-0 text-white-50">agusprasetyo1889@gmail.com</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center mb-4">
-                <i class="fa-solid fa-location-dot fa-2x text-info me-3" style="width: 40px; text-align: center;"></i>
-                <div>
-                  <h5 class="mb-0 text-white">Location</h5>
-                  <p class="mb-0 text-white-50">Tuban & Surabaya, <br>Jawa Timur Indonesia</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <h5 class="mb-4 text-white">Social Profiles</h5>
-              <div class="social-links-left">
-                <a href="https://github.com/agusprasetyo30" target="_blank" title="GitHub"
-                  class="text-white text-decoration-none mb-3 d-flex align-items-center hover-info"><i
-                    class="fa-brands fa-github fa-2x me-3" style="width: 40px; text-align: center;"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/agusprasetyo30/" target="_blank" title="LinkedIn"
-                  class="text-white text-decoration-none mb-3 d-flex align-items-center hover-info"><i
-                    class="fa-brands fa-linkedin fa-2x me-3" style="width: 40px; text-align: center;"></i> LinkedIn</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+			// Dynamic Active Links
+			let current = '';
+			sections.forEach(section => {
+				const sectionTop = section.offsetTop;
+				if (pageYOffset >= (sectionTop - 150)) {
+					current = section.getAttribute('id');
+				}
+			});
 
-  <!-- Footer -->
-  <footer class="footer text-center py-4" style="background-color: #083359;">
-    <div class="container">
-      <div class="text-white-50">
-        <p class="mb-0">&copy; 2026 Agus Prasetyo. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- AOS Animation JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- Typed.js for typing animation -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-  <script>
-    // Initialize AOS Animation
-    AOS.init({
-      once: true, // whether animation should happen only once - while scrolling down
-      offset: 100, // offset (in px) from the original trigger point
-    });
-
-    // Initialize Typed.js for typing animation
-    var typed = new Typed('#typed-name', {
-      strings: ['Agus Prasetyo', 'a Web Developer', 'a Backend Developer', 'a Laravel Developer'],
-      typeSpeed: 70,
-      backSpeed: 40,
-      loop: true,
-      showCursor: true,
-      cursorChar: '|'
-    });
-
-    // Navbar Scroll Effect and Active State
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section');
-
-    window.addEventListener('scroll', function () {
-      const navbar = document.querySelector('.navbar');
-
-      // Navbar background
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled', 'shadow');
-      } else {
-        navbar.classList.remove('scrolled', 'shadow');
-      }
-
-      // Dynamic Active Links
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= (sectionTop - 150)) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
+			navLinks.forEach(link => {
+				link.classList.remove('active');
+				if (link.getAttribute('href').includes(current)) {
+					link.classList.add('active');
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
